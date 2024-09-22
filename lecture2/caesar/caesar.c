@@ -3,6 +3,8 @@
 #include <ctype.h>
 #include <string.h>
 
+
+string shift_letter(string s);
 int main(int argc, string argv[])
 {
     if (argc != 2 )
@@ -28,17 +30,18 @@ int main(int argc, string argv[])
 
 
     // output will be string (character + key) % 26 = string chipertext
-    string output = "abc";
+    string output = shift_letter(input);
 }
 
 // make a function that will output the ciper
 string shift_letter(string s)
 {
-    for (int i = 0, length = strlen(input); i < length; i++)
+    for (int i = 0, length = strlen(s); i < length; i++)
     {
         // iterate through each character
-        char s = input[i];
+        char each_character = s[i];
         // print the value of ascii number location on every char
-        printf("value on ascii %d\n", s);
+        printf("value on ascii %d\n", each_character);
     }
+    return each_character;
 }
