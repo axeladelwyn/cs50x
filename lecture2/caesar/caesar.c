@@ -33,15 +33,6 @@ int main(int argc, string argv[])
     string output = shift_letter(input);
 }
 
-// make a function that will output the ciper
-void shift_letter(char s)
-{
-    for (int i = 0, length = strlen(s); i < length; i++)
-    {
-        // iterate through each character
-        char each_character = s[i];
-        // print the value of ascii number location on every char
-        printf("value on ascii %d\n", each_character);
-    }
+// make a function that will output the cipher
 
-}
+
