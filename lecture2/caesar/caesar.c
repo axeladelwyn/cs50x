@@ -1,16 +1,16 @@
-#include <stdio.h>
 #include <cs50.h>
 #include <ctype.h>
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-char rotate ( char c, int n);
+char rotate(char c, int n);
 bool only_digits(string s);
 
 int main(int argc, string argv[])
 {
 
-    if (argc != 2 )
+    if (argc != 2)
     {
         printf("Usage: ./caesar key\n");
         return 1;
@@ -20,7 +20,6 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar key\n");
         return 1;
     }
-
 
     int key = atoi(argv[1]);
     string input = get_string("plaintext: ");
@@ -32,9 +31,9 @@ int main(int argc, string argv[])
     // each (character + key) % 26 = cipher text
     // is upper
     // is lower
-    for (int i = 0, length = strlen(input) ; i < length; i++)
+    for (int i = 0, length = strlen(input); i < length; i++)
     {
-        printf("%c", rotate(input[i], key ));
+        printf("%c", rotate(input[i], key));
     }
     printf("\n");
 
@@ -42,7 +41,7 @@ int main(int argc, string argv[])
     // string output = shift_letter(input);
 }
 
-char rotate ( char c, int n)
+char rotate(char c, int n)
 {
     if (isupper(c))
     {
@@ -56,7 +55,7 @@ char rotate ( char c, int n)
     }
     else
     {
-    return c;
+        return c;
     }
 }
 
