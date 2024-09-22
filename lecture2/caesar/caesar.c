@@ -4,12 +4,12 @@
 #include <string.h>
 
 
-void shift_letter(char s);
+
 int main(int argc, string argv[])
 {
     if (argc != 2 )
     {
-        printf("Missing/Too much argument\n");
+        printf("Usage: ./caesar key\n");
         return 1;
     }
     else if (!isdigit((argv[1][0])))
@@ -30,7 +30,7 @@ int main(int argc, string argv[])
 
 
     // output will be string (character + key) % 26 = string chipertext
-    string output = shift_letter(input);
+    // string output = shift_letter(input);
 }
 
 // make a function that will output the cipher
