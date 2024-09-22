@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <ctype.h>
+#include <string.h>
 
 int main(int argc, string argv[])
 {
@@ -26,10 +27,11 @@ int main(int argc, string argv[])
     for (int i = 0, length = strlen(input); i < length; i++)
     {
         // iterate through each character
-        string s = input[i];
-        printf("value on ascii %d\n", s)
+        char s = input[i];
+        // print the value of ascii number location on every char
+        printf("value on ascii %d\n", s);
     }
-    
+
 
     // output will be string (character + key) % 26 = string chipertext
     string output = "abc";
