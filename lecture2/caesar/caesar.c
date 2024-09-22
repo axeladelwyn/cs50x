@@ -29,5 +29,7 @@ int main(int argc, string argv[])
         input[i]
     }
 
+    // output will be string (character + key) % 26 = string chipertext
+    string output = "abc";
 }
 
