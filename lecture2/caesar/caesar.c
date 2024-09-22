@@ -11,7 +11,7 @@ int main(int argc, string argv[])
     }
     else if (!isdigit((argv[1][0])))
     {
-        printf("Argument is not a digit\n");
+        printf("Usage: ./caesar key\n");
         return 1;
     }
 
@@ -20,6 +20,11 @@ int main(int argc, string argv[])
     // shift each character to the left/ right
     // loop through string
     // shift that string into somthing else
+    for (int i = 0, length = strlen(input); i < length; i++)
+    {
+        // iterate through each character
+        input[i]
+    }
 
 }
 
