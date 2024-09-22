@@ -1,13 +1,17 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <stdlib.h>
+
 
 int main(int argc, string argv[])
 {
     if (argc != 2)
     {
-        printf("Missing command-line argument\n");
+        printf("Usage: ./mario number")
         return 1;
     }
-    printf("hello, %s\n", argv[1]);
-    return 0;
+
+
+    int height = atoi(argv[1]);
+    printf("%i\n", height);
 }
