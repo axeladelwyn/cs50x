@@ -2,9 +2,11 @@
 #include <cs50.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(int argc, string argv[])
 {
+    int arg = atoi(*argv);
     if (argc != 2 )
     {
         printf("Usage: ./caesar key\n");
