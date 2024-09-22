@@ -30,8 +30,8 @@ int main(int argc, string argv[])
     // is upper
     // is lower
 
-    char c = 'A';
-    printf("%c", c);
+    char c = ('A'+ arg) % 26;
+    printf("%i\n", c);
 
     // output will be string (character + key) % 26 = string chipertext
     // string output = shift_letter(input);
