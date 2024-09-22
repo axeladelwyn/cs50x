@@ -4,7 +4,7 @@
 #include <string.h>
 
 
-string shift_letter(string s);
+void shift_letter(char s);
 int main(int argc, string argv[])
 {
     if (argc != 2 )
@@ -34,7 +34,7 @@ int main(int argc, string argv[])
 }
 
 // make a function that will output the ciper
-string shift_letter(string s)
+void shift_letter(char s)
 {
     for (int i = 0, length = strlen(s); i < length; i++)
     {
