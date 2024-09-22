@@ -26,8 +26,10 @@ int main(int argc, string argv[])
     for (int i = 0, length = strlen(input); i < length; i++)
     {
         // iterate through each character
-        input[i]
+        string s = input[i];
+        printf("value on ascii %d\n", s)
     }
+    
 
     // output will be string (character + key) % 26 = string chipertext
     string output = "abc";
