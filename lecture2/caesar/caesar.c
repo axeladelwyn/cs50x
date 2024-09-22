@@ -4,6 +4,9 @@
 #include <string.h>
 #include <stdlib.h>
 
+
+char rotate ( char c, int n);
+
 int main(int argc, string argv[])
 {
     int arg = atoi(*argv);
@@ -38,5 +41,5 @@ int main(int argc, string argv[])
 
 char rotate ( char c, int n)
 {
-    
+
 }
