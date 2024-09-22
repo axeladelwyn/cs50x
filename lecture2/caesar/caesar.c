@@ -30,7 +30,8 @@ int main(int argc, string argv[])
     // is upper
     // is lower
 
-
+    char c = 'A';
+    printf("%c", c);
 
     // output will be string (character + key) % 26 = string chipertext
     // string output = shift_letter(input);
@@ -41,5 +42,5 @@ int main(int argc, string argv[])
 
 char rotate ( char c, int n)
 {
-
+    return 0;
 }
