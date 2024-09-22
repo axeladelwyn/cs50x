@@ -15,12 +15,9 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar key\n");
         return 1;
     }
-    else if (!isdigit((argv[1][0])))
-    {
-        printf("Usage: ./caesar key\n");
-        return 1;
-    }
 
+
+    
     int key = atoi(argv[1]);
     string input = get_string("plaintext: ");
     printf("ciphertext: ");
