@@ -62,13 +62,14 @@ char rotate ( char c, int n)
 
 bool only_digits(string s)
 {
-    if (isdigit(s))
+
+    for (int i = 0, length = strlen(s); i < length; i++)
     {
-        return true
+        if (!isdigit(s[i]))
+        {
+            return false;
+        }
     }
-    else
-    {
-        return false
-    }
+    return true;
     // return false if its not digit
 }
