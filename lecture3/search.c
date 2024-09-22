@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -11,6 +12,10 @@ int main(void)
     // get input
     // int number = get_int
     int number = get_int("Enter the number you want to search!: ");
+
+    string string[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
+    // get string
+    string s = get_string("Enter the string you want to search? ");
 
     // do an algorithm to search for it
     // if number in array print True
@@ -33,5 +38,28 @@ int main(void)
         }
     }
 
+
+    //how to count through length of array?
+    // for every element in array add a counter
+    // return incremented counter
+
+
+
+    // if string match then return True or print found! same like before
+    // for every string if its match return true
+    // for (int i = 0 ; i < length of string; i++)
+    // index through the string and compare it
+    for (int i = 0, length =  ; i < )
+
     return 0;
+}
+
+
+int get_length(arr[])
+{
+    // loop through all the away
+    // increment counter
+    // counter = 0
+    int counter = 0;
+    for (int i = 0 )
 }
