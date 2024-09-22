@@ -14,8 +14,8 @@ int main(int argc, string argv[])
         printf("Argument is not a digit\n");
         return 1;
     }
-    printf("hello, %s\n", argv[1]);
-    return 0;
+
+    string input = get_string("plaintext: ");
     // what should i do?
     // shift each character to the left/ right
     // loop through string
