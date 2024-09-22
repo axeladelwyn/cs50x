@@ -24,6 +24,16 @@ int main(int argc, string argv[])
     // each (character + key) % 26 = cipher text
     // is upper
     // is lower
+
+
+
+    // output will be string (character + key) % 26 = string chipertext
+    string output = "abc";
+}
+
+// make a function that will output the ciper
+string shift_letter(string s)
+{
     for (int i = 0, length = strlen(input); i < length; i++)
     {
         // iterate through each character
@@ -31,9 +41,4 @@ int main(int argc, string argv[])
         // print the value of ascii number location on every char
         printf("value on ascii %d\n", s);
     }
-
-
-    // output will be string (character + key) % 26 = string chipertext
-    string output = "abc";
 }
-
