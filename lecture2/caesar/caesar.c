@@ -36,3 +36,7 @@ int main(int argc, string argv[])
 // make a function that will output the cipher
 
 
+char rotate ( char c, int n)
+{
+    
+}
