@@ -8,12 +8,14 @@ int main(void)
 
     // in array of integer search the value inside of it
     int array[] = {25, 30, 25, 1, 2, 3, 4};
-
+    int array_length = sizeof(array) / sizeof(array[0]);
     // get input
     // int number = get_int
     int number = get_int("Enter the number you want to search!: ");
 
     string letter[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
+    // divide the length of the array by 1
+    int letter_length = sizeof(letter) / sizeof(letter[0]);
     // get string
 
     string s = get_string("Enter the string you want to search? ");
@@ -25,21 +27,25 @@ int main(void)
     // for int i = 0; i < length of array ; i ++
     // index through the array array[i]
     // if array[i] same as number return True
-    for (int i = 0; i < 7; i++)
+    bool found_number = false;
+    for (int i = 0; i < array_length; i++)
     {
         if (array[i] == number)
         {
-            printf("Found the number!\n");
-            return true;
-        }
-        else
-        {
-            printf("Did not found number!\n");
-            return false;
+            found_number = true;
+            break;
         }
     }
 
-
+    // if found number then print(found)
+    if (found_number)
+    {
+        printf("Found number!\n");
+    }
+    else
+    {
+        printf("Did not found number!\n");
+    }
     //how to count through length of array?
     // for every element in array add a counter
     // return incremented counter
@@ -52,18 +58,26 @@ int main(void)
     // index through the string and compare it
     // use size of function that alrady been made
     // strcmp takes both string and compare it and return true or false depending on the result
-    for (int i = 0, length = sizeof(letter) ; i < length; i++ )
+    bool found_string = false;
+    for (int i = 0; i < letter_length; i++ )
     {
-        string elem = letter[i];
         // if its return 0 means is return true
-        if (strcmp(elem, s) == 0)
+        if (strcmp(letter[i], s) == 0)
         {
-            printf("Found the string!\n");
+            found_string = true;
+            break;
         }
-        else
-        {
-            printf("Did not found the string!\n");
-        }
+    }
+
+    // if found string = true, print ("found string!")
+
+    if (found_string)
+    {
+        printf("Found the string!\n");
+    }
+    else
+    {
+        printf("Did not found the string!\n");
     }
 
     return 0;
