@@ -4,12 +4,11 @@
 #include <string.h>
 #include <stdlib.h>
 
-
 char rotate ( char c, int n);
 
 int main(int argc, string argv[])
 {
-    int arg = atoi(*argv);
+
     if (argc != 2 )
     {
         printf("Usage: ./caesar key\n");
@@ -21,7 +20,9 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    int key = atoi(argv[1]);
     string input = get_string("plaintext: ");
+    printf("ciphertext: ");
     // what should i do?
     // shift each character to the left/ right
     // loop through string
@@ -29,18 +30,30 @@ int main(int argc, string argv[])
     // each (character + key) % 26 = cipher text
     // is upper
     // is lower
-
-    char c = ('Z'+ arg) % 26;
-    printf("%i\n", c);
+    for (int i = 0, length = strlen(input) ; i < length; i++)
+    {
+        printf("%c", rotate(input[i], key ));
+    }
+    printf("\n");
 
     // output will be string (character + key) % 26 = string chipertext
     // string output = shift_letter(input);
 }
 
-// make a function that will output the cipher
-
-
 char rotate ( char c, int n)
 {
-    return 0;
+    if (isupper(c))
+    {
+        // rotate the character
+        // n is the key
+        return (c - 'A' + n) % 26 + 'A';
+    }
+    else if (islower(c))
+    {
+        return (c - 'a' + n) % 26 + 'a';
+    }
+    else
+    {
+    return c;
+    }
 }
