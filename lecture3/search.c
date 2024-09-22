@@ -13,8 +13,9 @@ int main(void)
     // int number = get_int
     int number = get_int("Enter the number you want to search!: ");
 
-    string string[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
+    string letter[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
     // get string
+
     string s = get_string("Enter the string you want to search? ");
 
     // do an algorithm to search for it
@@ -49,17 +50,23 @@ int main(void)
     // for every string if its match return true
     // for (int i = 0 ; i < length of string; i++)
     // index through the string and compare it
-    for (int i = 0, length =  ; i < )
+    // use size of function that alrady been made
+    // strcmp takes both string and compare it and return true or false depending on the result
+    for (int i = 0, length = sizeof(letter) ; i < length; i++ )
+    {
+        string elem = letter[i];
+        // if its return 0 means is return true
+        if (strcmp(elem, s) == 0)
+        {
+            printf("Found the string!\n");
+        }
+        else
+        {
+            printf("Did not found the string!\n");
+        }
+    }
 
     return 0;
 }
 
 
-int get_length(arr[])
-{
-    // loop through all the away
-    // increment counter
-    // counter = 0
-    int counter = 0;
-    for (int i = 0 )
-}
