@@ -43,5 +43,5 @@ string shift_letter(string s)
         // print the value of ascii number location on every char
         printf("value on ascii %d\n", each_character);
     }
-    return each_character;
+
 }
