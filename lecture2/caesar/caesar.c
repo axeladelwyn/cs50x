@@ -20,6 +20,9 @@ int main(int argc, string argv[])
     // shift each character to the left/ right
     // loop through string
     // shift that string into somthing else
+    // each (character + key) % 26 = cipher text
+    // is upper
+    // is lower
     for (int i = 0, length = strlen(input); i < length; i++)
     {
         // iterate through each character
