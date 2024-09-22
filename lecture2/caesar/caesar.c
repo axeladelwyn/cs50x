@@ -9,7 +9,7 @@ int main(int argc, string argv[])
         printf("Missing/Too much argument\n");
         return 1;
     }
-    else if (!isdigit(argv[1][0]))
+    else if (!isdigit((argv[1][0])))
     {
         printf("Argument is not a digit\n");
         return 1;
