@@ -16,7 +16,11 @@ int main(int argc, string argv[])
         return 1;
     }
     else if (!only_digits(argv[1]))
-    
+    {
+        printf("Usage: ./caesar key\n");
+        return 1;
+    }
+
 
     int key = atoi(argv[1]);
     string input = get_string("plaintext: ");
