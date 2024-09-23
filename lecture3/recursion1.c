@@ -19,6 +19,7 @@ void draw(int n)
     // If nothing to draw
     if (n <= 0)
     {
+        // this will initiate the print
         return;
     }
 
