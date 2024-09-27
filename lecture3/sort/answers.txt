@@ -1,0 +1,28 @@
+sort1 uses: bubble short
+
+
+How do you know?:
+random50000.txt finished at 5.634s; General cases because its random;
+reversed50000.txt finished at 5.003; Worst cases scenario
+sorted50000.txt; finished at 0.644s; Best case scenario works
+
+because the best case scenario have the shortest time
+
+
+sort2 uses: Merge sort algorithm
+
+How do you know?:
+
+random50000.txt; finished at 0.458s; General cases;
+reversed50000.txt; finished at 0.484; Worst cases;
+sorted50000.txt; finished at 0.516s; best case;
+
+generally have the same time whether its random, reversed, or sorted.
+
+sort3 uses: Selection algorithm
+
+How do you know?:
+random50000.txt; finished at 2.328; General cases;
+reversed50000.txt; finished at 3.361s; worst cases;
+sorted50000.txt; finished at 2.218s; bestcase;
+
