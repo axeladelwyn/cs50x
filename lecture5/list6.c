@@ -28,20 +28,22 @@ int main(int argc, char *argv[])
         {
             return 1;
         }
+        // insert the number to the head of linked list and insert NULL to the tail
         n->number = number;
         n->next = NULL;
 
         // If list is empty
         if (list == NULL)
         {
+            // what is n in this context? is it just NULL?
             list = n;
         }
 
-        // If number belongs at beginning of list
+        // If number belongs at beginning of list, if number is less than the list number, put the n->next into the list
         else if (n->number < list->number)
         {
             n->next = list;
-            list = n; 
+            list = n;
         }
 
         // If number belongs later in list
@@ -53,7 +55,7 @@ int main(int argc, char *argv[])
                 // If at end of list
                 if (ptr->next == NULL)
                 {
-                    // Append node
+                    // Append node, n is the argument the user give
                     ptr->next = n;
                     break;
                 }
@@ -61,6 +63,8 @@ int main(int argc, char *argv[])
                 // If in middle of list
                 if (n->number < ptr->next->number)
                 {
+                    // if the number in the linked list is smaller than the lext one
+                    // this is the code that sort the linked list, this will arange the linked list into the smallets into the biggest one
                     n->next = ptr->next;
                     ptr->next = n;
                     break;

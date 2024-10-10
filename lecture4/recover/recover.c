@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(int argc, char *argv[])
-{
-    // make sure the argument it at certain number
-=======
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -83,5 +75,4 @@ int main(int argc, char *argv[])
     // sprintf(filename, %03i.jpg", 2);
     // FILE *img = fopen (filename, "w")
     // fwrite(data, size, number, output);
->>>>>>> 2c9c88b (lecture 5)
 }
